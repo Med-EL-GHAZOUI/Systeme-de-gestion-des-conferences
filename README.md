@@ -1,1 +1,1 @@
-# Syst-me-de-gestion-des-conf-rences
+# Système de gestion des conférences
