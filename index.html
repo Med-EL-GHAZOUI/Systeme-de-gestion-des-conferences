@@ -1,11 +1,310 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Bonjour
-</body>
-</html>
+<!DOCTYPE html> <html lang="fr"> 
+    <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="SGConf - Solution professionnelle de gestion de conférences et d'événements en présentiel">
+         <title>SGConf | Logiciel de gestion d'événements</title> 
+         <link rel="stylesheet" href="styles.css"> 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+           <!-- Ajout d'une favicon -->
+             <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+            </head> 
+            <body>
+                 <header class="header"> <div class="container header__container"> 
+                    <a href="index.html" class="logo"> 
+                        <img src="assets/logo.png" alt="SGConf Logo" width="110" height="45">
+                     </a>
+                      <nav class="main-nav"> <button class="mobile-menu-toggle" aria-label="Menu"> <span class="hamburger"></span> </button> 
+                        <ul class="main-nav__list"> 
+                            <li class="main-nav__item"><a href="#about" class="main-nav__link">À Propos</a></li> 
+                            <li class="main-nav__item"><a href="#fonctionnalites" class="main-nav__link">Fonctionnalités</a></li>
+                             <li class="main-nav__item"><a href="#offres" class="main-nav__link">Offres</a></li> 
+                             <li class="main-nav__item"><a href="#equipe" class="main-nav__link">Équipe</a></li> 
+                             <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li> 
+                             <li class="main-nav__item"><a href="login.html" ><button class="btn btn--primary demo-button">Commencer</a></button></li> 
+                        </ul> 
+                    </nav> 
+                </div> 
+            </header>
+    <main>
+        <!-- Section Hero principale -->
+        <section class="hero" id="about">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Gestion de Conférences<sup>&reg;</sup></h1>
+                    <p class="hero__subtitle">SOLUTION PROFESSIONNELLE</p>
+                    <p class="hero__description">Transformez votre expérience de conférence avec notre application web. Soumission, évaluation, et communication simplifiées. Ne laissez pas le chaos régner, prenez le contrôle!</p>
+                    <div class="hero__cta">
+                        <a href="login.html"><button class="btn btn--primary demo-button">Démarrer Maintenant</button></a>
+                        <a href="#fonctionnalites"><button class="btn btn--outline">En savoir plus</button></a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/img1.png" alt="Interface du logiciel SGConf" width="600" height="400" loading="eager">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section Pourquoi nous choisir -->
+        <section class="why-us">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="section-title">Pourquoi Choisir Notre Application ?</h2>
+                    <p class="hero__description">Notre solution est conçue pour rendre la gestion des conférences aussi simple qu'un clic. Profitez d'une interface intuitive et d'une sécurité renforcée. Vous allez adorer !</p>
+                    <ul class="features-list">
+                        <li><span class="icon-check"></span> Interface simple et intuitive</li>
+                        <li><span class="icon-check"></span> Sécurité des données renforcée</li>
+                        <li><span class="icon-check"></span> Support technique rapide</li>
+                        <li><span class="icon-check"></span> Solution adaptée à tous types de conférences</li>
+                    </ul>
+                    <div class="hero__cta">
+                        <a href="#offres"><button class="btn btn--outline">Voir nos offres</button></a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/img2.png" alt="Avantages de SGConf" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section Fonctionnalités -->
+        <section class="features" id="fonctionnalites">
+            <div class="container">
+                <h2 class="section-title">Nos Fonctionnalités</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Planification complète</h3>
+                        <p class="feature-card__description">Gérez tous les aspects de votre conférence depuis une interface intuitive.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Soumission simplifiée</h3>
+                        <p class="feature-card__description">Processus de soumission des articles et présentations intuitif et efficace.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Évaluation par les pairs</h3>
+                        <p class="feature-card__description">Processus d'évaluation transparent et efficace pour les comités scientifiques.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Gestion des participants</h3>
+                        <p class="feature-card__description">Suivi simplifié des inscriptions, présences et communications avec les participants.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section Tarifs -->
+      
+        
+            <section class="pricing" id="offres">
+                <div class="container">
+                    <h2 class="section-title">Nos Offres</h2>
+                    <div class="pricing__grid">
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">Standard</h3>
+                            <p class="pricing-card__price">999 DH</p>
+                            <p class="pricing-card__description">Accès complet à toutes les fonctionnalités essentielles.</p>
+                            <button class="btn btn--primary">Acheter Maintenant</button>
+                        </div>
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">Premium</h3>
+                            <p class="pricing-card__price">1999 DH</p>
+                            <p class="pricing-card__description">Tout dans Standard, plus des fonctionnalités avancées.</p>
+                            <button class="btn btn--primary">Acheter Maintenant</button>
+                        </div>
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">Pro</h3>
+                            <p class="pricing-card__price">2999 DH</p>
+                            <p class="pricing-card__description">Tout dans Premium, avec support prioritaire.</p>
+                            <button class="btn btn--primary">Acheter Maintenant</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    
+        <!-- Section Équipe -->
+        
+        <section class="team" id="equipe">
+            <div class="container">
+                <h2 class="section-title">Notre Équipe</h2>
+                <div class="team__grid">
+                    <div class="team-card">
+                        <h3 class="team-card__name">Ghizlane EL IDRISSI</h3>
+                        <p class="team-card__role">Étudiant en troisième année à l'EMSI</p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+                            <a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <h3 class="team-card__name">EL-GHAZOUI Mohamed</h3>
+                        <p class="team-card__role">Étudiant en troisième année à l'EMSI</p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+                            <a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section Contact -->
+        <section class="contact" id="contact">
+            <div class="container contact__container">
+                <h2 class="section-title">Contactez-Nous Pour Plus D'Infos</h2>
+                <div class="contact__content">
+                    <form class="contact__form">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Votre numéro" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Votre message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Envoyer</button>
+                    </form>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19.92C22 20.4704 21.7893 20.9996 21.4142 21.3747C21.0391 21.7498 20.5099 21.9605 19.96 21.96C18.2 22.05 16.48 21.8 14.87 21.23C13.2514 20.6554 11.759 19.7808 10.47 18.64C9.21175 17.4876 8.15738 16.1325 7.35 14.64C6.79156 13.0211 6.53252 11.2958 6.60999 9.56001C6.61486 9.01208 6.82669 8.48693 7.20311 8.11332C7.57953 7.73971 8.09588 7.53024 8.64 7.53001H11.64C12.0887 7.52608 12.5237 7.68398 12.8683 7.97456C13.2129 8.26514 13.4463 8.67229 13.53 9.12001C13.6822 10.0563 13.9399 10.9695 14.3 11.84C14.4481 12.1785 14.4966 12.5523 14.4396 12.9167C14.3826 13.2811 14.2227 13.621 13.98 13.89L12.76 15.11C13.4948 16.3585 14.4318 17.4749 15.53 18.41C16.53 19.41 17.59 20.22 18.77 20.86L19.99 19.64C20.259 19.3973 20.5989 19.2374 20.9634 19.1804C21.3278 19.1234 21.7016 19.1719 22.04 19.32C22.9087 19.6799 23.8197 19.9377 24.7539 20.09C25.2156 20.1745 25.6295 20.4132 25.9226 20.7647C26.2157 21.1162 26.3726 21.5596 26.37 22.02L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>Téléphone</h3>
+                            <p>+212 5XX-XXXXXX</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>Email</h3>
+                            <p>contact@sgconf.ma</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>Adresse</h3>
+                            <p>123 Avenue Mohammed V, Rabat, Maroc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__map">
+                        <h2 class="section-title">Où nous trouver ?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.7725627740124!2d-6.829395725466999!3d34.024048519220436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8e63a8b635%3A0xecadb66acb069ced!2sEMSI%203%20Rabat%20(EMSI%20Bouregrag)!5e0!3m2!1sfr!2sma!4v1743957551098!5m2!1sfr!2sma"
+                     width="100%" 
+                     height="450"
+                      style="border:0;"
+                       allowfullscreen=""
+                        loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__info">
+                    <div class="logo">SGConf</div>
+                    <p>Solution professionnelle pour la gestion de vos conférences et événements académiques</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a>
+                        <a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a>
+                        <a href="#" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+                        <a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#about">À Propos</a></li>
+                            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                            <li><a href="#offres">Offres</a></li>
+                            <li><a href="#equipe">Équipe</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Ressources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__cta">
+                        <h3>Prêt à commencer?</h3>
+                      <a href="login.html" ><button class="btn btn--primary demo-button">Commencer</a></button> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="copyright">&copy; 2025 SGConf. Tous droits réservés.</p>
+                <div class="footer__legal">
+                    <a href="/mentions-legales">Mentions légales</a>
+                    <a href="/confidentialite">Politique de confidentialité</a>
+                    <a href="/cgv">Conditions générales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bouton de retour en haut -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    
+    <script src="main.js"></script>
+    </body> </html>
